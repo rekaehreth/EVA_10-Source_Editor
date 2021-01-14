@@ -8,7 +8,24 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <None Remove="Resources\new.ico" />
+    <None Remove="Resources\open.ico" />
+    <None Remove="Resources\open_folder.ico" />
+    <None Remove="Resources\save.ico" />
+    <None Remove="Resources\zoomin.ico" />
+    <None Remove="Resources\zoomout.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\open.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\new.ico" />
+    <Resource Include="Resources\open_folder.ico" />
+    <Resource Include="Resources\save.ico" />
+    <Resource Include="Resources\zoomin.ico" />
+    <Resource Include="Resources\zoomout.ico" />
   </ItemGroup>
 
   <ItemGroup>

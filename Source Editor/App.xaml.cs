@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Source_Editor.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -13,5 +14,18 @@ namespace Source_Editor
     /// </summary>
     public partial class App : Application
     {
+        EditorViewModel _viewModel;
+        MainWindow _window;
+
+        void App_Startup(object sender, StartupEventArgs eventArgs)
+        {
+            _window = new MainWindow();
+            _viewModel = new EditorViewModel();
+            _window.DataContext = _viewModel;
+        }
+        public App()
+        {
+            Startup += App_Startup;
+        }
     }
 }

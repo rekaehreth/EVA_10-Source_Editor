@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Source_Editor"
+        xmlns:local="clr-namespace:Source_Editor" xmlns:viewmodels="clr-namespace:Source_Editor.ViewModels" d:DataContext="{d:DesignInstance Type=viewmodels:EditorViewModel}"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -43,10 +43,16 @@
                 </ToolBar>
                 <ToolBar>
                     <Button Name="ZoomOutButton">
-                        <Image Source="Resources\zoomout.ico" Height="15"/>
+                        <Image Source="Resources/zoomout.ico" Height="15"/>
                     </Button>
                 </ToolBar>
             </ToolBarTray>
         </DockPanel>
+        <ScrollViewer>
+            <DockPanel>
+                <TextBox Name="LineNumberBox" DockPanel.Dock="Left" TextWrapping="NoWrap" FontFamily="Modern" IsReadOnly="True" Background="Gray" Foreground="DarkGray" HorizontalAlignment="Right" Text="{Binding LineNumbers}" FontSize="{Binding FontSize}" />
+                <TextBox Name="CodeBox" DockPanel.Dock="Left" TextWrapping="NoWrap" FontFamily="Modern" AcceptsReturn="True" AcceptsTab="True" Text="{Binding CurrentText}" FontSize="{Binding FontSize}" />
+            </DockPanel>
+        </ScrollViewer>
     </Grid>
 </Window>
