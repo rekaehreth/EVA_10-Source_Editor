@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <DockPanel LastChildFill="False">
+        <DockPanel LastChildFill="True">
             <Menu DockPanel.Dock="Top">
                 <MenuItem Header="File">
                     <MenuItem Header="New"/>
@@ -47,12 +47,12 @@
                     </Button>
                 </ToolBar>
             </ToolBarTray>
+            <ScrollViewer>
+                <DockPanel LastChildFill="True">
+                    <TextBox Name="LineNumberBox" Width="25" DockPanel.Dock="Left" TextWrapping="NoWrap" TextAlignment="Right" FontFamily="Modern" IsReadOnly="True" Background="LightGray" Foreground="Gray" HorizontalAlignment="Right" Text="{Binding LineNumbers}" FontSize="{Binding FontSize}" />
+                    <TextBox Name="CodeBox" DockPanel.Dock="Left" TextWrapping="NoWrap" FontFamily="Modern" AcceptsReturn="True" AcceptsTab="True" Text="{Binding CurrentText, UpdateSourceTrigger=PropertyChanged}" FontSize="{Binding FontSize}" />
+                </DockPanel>
+            </ScrollViewer>
         </DockPanel>
-        <ScrollViewer>
-            <DockPanel>
-                <TextBox Name="LineNumberBox" DockPanel.Dock="Left" TextWrapping="NoWrap" FontFamily="Modern" IsReadOnly="True" Background="Gray" Foreground="DarkGray" HorizontalAlignment="Right" Text="{Binding LineNumbers}" FontSize="{Binding FontSize}" />
-                <TextBox Name="CodeBox" DockPanel.Dock="Left" TextWrapping="NoWrap" FontFamily="Modern" AcceptsReturn="True" AcceptsTab="True" Text="{Binding CurrentText}" FontSize="{Binding FontSize}" />
-            </DockPanel>
-        </ScrollViewer>
     </Grid>
 </Window>

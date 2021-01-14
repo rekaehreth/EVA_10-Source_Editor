@@ -4,7 +4,6 @@ C:\Users\Réka\source\repos\Source Editor\Source Editor\bin\Debug\netcoreapp3.1\
 C:\Users\Réka\source\repos\Source Editor\Source Editor\bin\Debug\netcoreapp3.1\Source Editor.runtimeconfig.dev.json
 C:\Users\Réka\source\repos\Source Editor\Source Editor\bin\Debug\netcoreapp3.1\Source Editor.dll
 C:\Users\Réka\source\repos\Source Editor\Source Editor\bin\Debug\netcoreapp3.1\Source Editor.pdb
-C:\Users\Réka\source\repos\Source Editor\Source Editor\obj\Debug\netcoreapp3.1\Source Editor.csprojAssemblyReference.cache
 C:\Users\Réka\source\repos\Source Editor\Source Editor\obj\Debug\netcoreapp3.1\MainWindow.g.cs
 C:\Users\Réka\source\repos\Source Editor\Source Editor\obj\Debug\netcoreapp3.1\App.g.cs
 C:\Users\Réka\source\repos\Source Editor\Source Editor\obj\Debug\netcoreapp3.1\Source Editor_MarkupCompile.cache

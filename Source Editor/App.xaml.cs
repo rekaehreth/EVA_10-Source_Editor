@@ -22,6 +22,7 @@ namespace Source_Editor
             _window = new MainWindow();
             _viewModel = new EditorViewModel();
             _window.DataContext = _viewModel;
+            _window.Show();
         }
         public App()
         {
