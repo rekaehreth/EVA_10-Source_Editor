@@ -1,0 +1,21 @@
+C:\Users\Réka\source\repos\Source Editor\Source Editor\bin\Debug\netcoreapp3.1\Source Editor.exe
+C:\Users\Réka\source\repos\Source Editor\Source Editor\bin\Debug\netcoreapp3.1\Source Editor.deps.json
+C:\Users\Réka\source\repos\Source Editor\Source Editor\bin\Debug\netcoreapp3.1\Source Editor.runtimeconfig.json
+C:\Users\Réka\source\repos\Source Editor\Source Editor\bin\Debug\netcoreapp3.1\Source Editor.runtimeconfig.dev.json
+C:\Users\Réka\source\repos\Source Editor\Source Editor\bin\Debug\netcoreapp3.1\Source Editor.dll
+C:\Users\Réka\source\repos\Source Editor\Source Editor\bin\Debug\netcoreapp3.1\Source Editor.pdb
+C:\Users\Réka\source\repos\Source Editor\Source Editor\obj\Debug\netcoreapp3.1\Source Editor.csprojAssemblyReference.cache
+C:\Users\Réka\source\repos\Source Editor\Source Editor\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Réka\source\repos\Source Editor\Source Editor\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Réka\source\repos\Source Editor\Source Editor\obj\Debug\netcoreapp3.1\Source Editor_MarkupCompile.cache
+C:\Users\Réka\source\repos\Source Editor\Source Editor\obj\Debug\netcoreapp3.1\Source Editor_MarkupCompile.lref
+C:\Users\Réka\source\repos\Source Editor\Source Editor\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Réka\source\repos\Source Editor\Source Editor\obj\Debug\netcoreapp3.1\Source Editor.g.resources
+C:\Users\Réka\source\repos\Source Editor\Source Editor\obj\Debug\netcoreapp3.1\Source Editor.AssemblyInfoInputs.cache
+C:\Users\Réka\source\repos\Source Editor\Source Editor\obj\Debug\netcoreapp3.1\Source Editor.AssemblyInfo.cs
+C:\Users\Réka\source\repos\Source Editor\Source Editor\obj\Debug\netcoreapp3.1\Source Editor.csproj.CoreCompileInputs.cache
+C:\Users\Réka\source\repos\Source Editor\Source Editor\obj\Debug\netcoreapp3.1\Source Editor.dll
+C:\Users\Réka\source\repos\Source Editor\Source Editor\obj\Debug\netcoreapp3.1\Source Editor.pdb
+C:\Users\Réka\source\repos\Source Editor\Source Editor\obj\Debug\netcoreapp3.1\Source Editor.genruntimeconfig.cache
+C:\Users\Réka\source\repos\Source Editor\Source Editor\obj\Debug\netcoreapp3.1\Source_Editor.Resource.resources
+C:\Users\Réka\source\repos\Source Editor\Source Editor\obj\Debug\netcoreapp3.1\Source Editor.csproj.GenerateResource.cache

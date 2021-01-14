@@ -1,0 +1,52 @@
+﻿<Window x:Class="Source_Editor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Source_Editor"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DockPanel LastChildFill="False">
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="File">
+                    <MenuItem Header="New"/>
+                    <MenuItem Header="Open"/>
+                    <MenuItem Header="Save" />
+                    <MenuItem Header="Close"/>
+                </MenuItem>
+                <MenuItem Header="View">
+                    <MenuItem Header="Increase font size"/>
+                    <MenuItem Header="Decrease font size"/>
+                </MenuItem>
+            </Menu>
+            <ToolBarTray DockPanel.Dock="Top">
+                <ToolBar>
+                    <Button Name="NewFileButton">
+                        <Image Source="Resources/new.ico" Height="15"/>
+                    </Button>
+                </ToolBar>
+                <ToolBar>
+                    <Button Name="OpenFileButton">
+                        <Image Source="Resources/open.ico" Height="15"/>
+                    </Button>
+                </ToolBar>
+                <ToolBar>
+                    <Button Name="SaveFileButton">
+                        <Image Source="Resources/save.ico" Height="15"/>
+                    </Button>
+                </ToolBar>
+                <ToolBar>
+                    <Button Name="ZoomInButton">
+                        <Image Source="Resources/zoomin.ico" Height="15"/>
+                    </Button>
+                </ToolBar>
+                <ToolBar>
+                    <Button Name="ZoomOutButton">
+                        <Image Source="Resources\zoomout.ico" Height="15"/>
+                    </Button>
+                </ToolBar>
+            </ToolBarTray>
+        </DockPanel>
+    </Grid>
+</Window>
