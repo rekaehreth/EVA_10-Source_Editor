@@ -40,7 +40,7 @@ namespace Source_Editor.ViewModels
                 OnPropertyChanged();
             } 
         }
-        private double _fontSize;
+        private double _fontSize = 12;
         public double FontSize 
         {
             get
@@ -52,6 +52,24 @@ namespace Source_Editor.ViewModels
                 _fontSize = value;
                 OnPropertyChanged();
             }
+        }
+        public DelegateCommand IncreaseText { get; set; }
+        public DelegateCommand DecreaseText { get; set; }
+        public EditorViewModel()
+        {
+            IncreaseText = new DelegateCommand(_ => 
+            { 
+                ++FontSize; 
+                OnPropertyChanged(); 
+            });
+            DecreaseText = new DelegateCommand(_ => 
+            {
+                if (FontSize > 1)
+                {
+                    --FontSize;
+                    OnPropertyChanged();
+                }
+            });
         }
     }
 }

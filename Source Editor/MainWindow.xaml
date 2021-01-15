@@ -16,8 +16,8 @@
                     <MenuItem Header="Close"/>
                 </MenuItem>
                 <MenuItem Header="View">
-                    <MenuItem Header="Increase font size"/>
-                    <MenuItem Header="Decrease font size"/>
+                    <MenuItem Header="Increase font size" Command="{Binding IncreaseText}"/>
+                    <MenuItem Header="Decrease font size" Command="{Binding DecreaseText}"/>
                 </MenuItem>
             </Menu>
             <ToolBarTray DockPanel.Dock="Top">
@@ -37,20 +37,20 @@
                     </Button>
                 </ToolBar>
                 <ToolBar>
-                    <Button Name="ZoomInButton">
+                    <Button Name="ZoomInButton" Command="{Binding IncreaseText}">
                         <Image Source="Resources/zoomin.ico" Height="15"/>
                     </Button>
                 </ToolBar>
                 <ToolBar>
-                    <Button Name="ZoomOutButton">
+                    <Button Name="ZoomOutButton" Command="{Binding DecreaseText}">
                         <Image Source="Resources/zoomout.ico" Height="15"/>
                     </Button>
                 </ToolBar>
             </ToolBarTray>
             <ScrollViewer>
                 <DockPanel LastChildFill="True">
-                    <TextBox Name="LineNumberBox" Width="25" DockPanel.Dock="Left" TextWrapping="NoWrap" TextAlignment="Right" FontFamily="Modern" IsReadOnly="True" Background="LightGray" Foreground="Gray" HorizontalAlignment="Right" Text="{Binding LineNumbers}" FontSize="{Binding FontSize}" />
-                    <TextBox Name="CodeBox" DockPanel.Dock="Left" TextWrapping="NoWrap" FontFamily="Modern" AcceptsReturn="True" AcceptsTab="True" Text="{Binding CurrentText, UpdateSourceTrigger=PropertyChanged}" FontSize="{Binding FontSize}" />
+                    <TextBox Name="LineNumberBox" Width="25" DockPanel.Dock="Left" TextWrapping="NoWrap" TextAlignment="Right" FontFamily="Modern" IsReadOnly="True" Background="LightGray" Foreground="Gray" HorizontalAlignment="Right" Text="{Binding LineNumbers}" FontSize="{Binding FontSize, UpdateSourceTrigger=PropertyChanged}" />
+                    <TextBox Name="CodeBox" DockPanel.Dock="Left" TextWrapping="NoWrap" FontFamily="Modern" AcceptsReturn="True" AcceptsTab="True" Text="{Binding CurrentText, UpdateSourceTrigger=PropertyChanged}" FontSize="{Binding FontSize, UpdateSourceTrigger=PropertyChanged}" />
                 </DockPanel>
             </ScrollViewer>
         </DockPanel>

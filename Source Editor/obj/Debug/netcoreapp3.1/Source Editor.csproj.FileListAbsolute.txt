@@ -18,3 +18,4 @@ C:\Users\Réka\source\repos\Source Editor\Source Editor\obj\Debug\netcoreapp3.1\
 C:\Users\Réka\source\repos\Source Editor\Source Editor\obj\Debug\netcoreapp3.1\Source Editor.genruntimeconfig.cache
 C:\Users\Réka\source\repos\Source Editor\Source Editor\obj\Debug\netcoreapp3.1\Source_Editor.Resource.resources
 C:\Users\Réka\source\repos\Source Editor\Source Editor\obj\Debug\netcoreapp3.1\Source Editor.csproj.GenerateResource.cache
+C:\Users\Réka\source\repos\Source Editor\Source Editor\obj\Debug\netcoreapp3.1\Source Editor.csprojAssemblyReference.cache
