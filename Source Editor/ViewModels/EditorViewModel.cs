@@ -19,7 +19,7 @@ namespace Source_Editor.ViewModels
                 _currentText = value;
                 // A begépelt szöveget reprezentáló mezo setterében számítsuk ki és frissítsük a sorszámokat tartalmazó mezot!
                 LineNumbers = "";
-                int lines = _currentText.Count(letter => letter == '\n');
+                int lines = _currentText.Count(letter => letter == '\n') + 1;
                 for (int i = 0; i < lines; ++i)
                 {
                     LineNumbers += $"{i + 1}\n";
