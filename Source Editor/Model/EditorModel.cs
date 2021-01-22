@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Source_Editor.Persistance;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,27 +8,35 @@ namespace Source_Editor.Model
 {
     class EditorModel
     {
-        // A modell legyen alkalmas a fájl tartalmának tárolására, a fájl nevének és elérési útvonalának nyilvántartására! 
-        // Az elérési útvonal alapértelmezetten legyen null, és 
         private string fileContents;
         private string fileName;
         private string filePath = null;
+        FilePersistence filePersistence = new FilePersistence();
         public event EventHandler<FileOperationEventArgs> FileOpened;
         public event EventHandler<FileOperationEventArgs> FileSaved;
-        // legyen egy publikus függvény annak lekérésére, hogy tartozik-e már elérési útvonal a fájlhoz!
+        public EditorModel( FilePersistence persistence )
+        {
+            filePersistence = persistence;
+        }
         public bool pathAvailable()
         {
-            return filePath == null;
+            return filePath != null && filePath != "";
         }
-        // A modell tartalmazzon egy publikus aszinkron eljárást a mentéshez a fájl tartalmával és opcionálisan az elérési útvonallal, mint paraméterekkel!
-        public async Task SaveFile(string contents, string path = null)
+        public async Task SaveFileAsync(string contents, bool isDirty, string path = null)
         {
-
+            await filePersistence.SaveAsync(contents, path);
+            FileSaved?.Invoke(this, new FileOperationEventArgs(path, contents, isDirty));
         }
-        // A modell tartalmazzon egy publikus aszinkron eljárást a betöltéshez, mely paraméterül kapja az elérési útvonalat!
-        public async Task LoadFile(string path)
+        internal void NewFile()
         {
-
+            fileContents = null;
+            fileName = null;
+            filePath = null;
+        }
+        public async Task LoadFileAsync(string path, bool isDirty)
+        {
+            fileContents = await filePersistence.LoadAsync(path);
+            FileOpened?.Invoke(this, new FileOperationEventArgs(path, fileContents, isDirty));
         }
     }
 }

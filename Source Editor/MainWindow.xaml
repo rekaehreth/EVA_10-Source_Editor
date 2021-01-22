@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Source_Editor" xmlns:viewmodels="clr-namespace:Source_Editor.ViewModels" d:DataContext="{d:DesignInstance Type=viewmodels:EditorViewModel}"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Source Editor" Height="450" Width="800">
     <Grid>
         <DockPanel LastChildFill="True">
             <Menu DockPanel.Dock="Top">
                 <MenuItem Header="File">
                     <MenuItem Header="New"/>
-                    <MenuItem Header="Open"/>
-                    <MenuItem Header="Save" />
+                    <MenuItem Header="Open" Command="{Binding Open}" />
+                    <MenuItem Header="Save" Command="{Binding Save}" />
                     <MenuItem Header="Close"/>
                 </MenuItem>
                 <MenuItem Header="View">
@@ -22,17 +22,17 @@
             </Menu>
             <ToolBarTray DockPanel.Dock="Top">
                 <ToolBar>
-                    <Button Name="NewFileButton">
+                    <Button Name="NewFileButton" Command="{Binding New}" ToolTipService.InitialShowDelay="5000" ToolTip="New File">
                         <Image Source="Resources/new.ico" Height="15"/>
                     </Button>
                 </ToolBar>
                 <ToolBar>
-                    <Button Name="OpenFileButton">
+                    <Button Name="OpenFileButton" Command="{Binding Open}" ToolTipService.InitialShowDelay="5000" ToolTip="Open File">
                         <Image Source="Resources/open.ico" Height="15"/>
                     </Button>
                 </ToolBar>
                 <ToolBar>
-                    <Button Name="SaveFileButton">
+                    <Button Name="SaveFileButton" Command="{Binding Save}" ToolTipService.InitialShowDelay="5000" ToolTip="Save File">
                         <Image Source="Resources/save.ico" Height="15"/>
                     </Button>
                 </ToolBar>
